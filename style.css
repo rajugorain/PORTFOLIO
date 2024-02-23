@@ -29,6 +29,7 @@ nav{
 }
 .logo{
     width: 170px;
+    max-height: 110px;
 }
 nav ul li{
     display: inline-block;
@@ -119,12 +120,17 @@ nav ul li a:hover::after{
     list-style: none ;
     margin: 10px 0;
 }
+.tab-contents ul li a{
+    text-decoration: none;
+    color: white;
+}
 .tab-contents ul li span{
     color: rgb(233, 10, 95);
     font-size: 14px;
 }
 .tab-contents{
     display: none;
+    font-style: normal;
 }
 .tab-contents.active-tab{
     display: block;
@@ -241,6 +247,10 @@ nav ul li a:hover::after{
     color: white;
     transition: background 0.5s;
 }
+/* .btn::after{
+    content: '';
+
+} */
 .btn:hover{
     background-color: #ff004f;
 }
